@@ -4,6 +4,7 @@ const SideNav = () => {
     const location = useLocation();
 
     const navItems = [
+        { name: 'Dashboard', path: '/dashboard' },
         { name: 'Statistics', path: '/dashboard/statistics' },
         { name: 'Create Course', path: '/dashboard/create-course' },
         { name: 'Access User', path: '/dashboard/access-user' },
