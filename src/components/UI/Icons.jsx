@@ -53,4 +53,59 @@ export const CheckCircleIcon = ({ className = "w-3.5 h-3.5" }) => (
   </svg>
 );
 
+export const PlayIcon = ({ className = "w-10 h-10" }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 20 20">
+    <path d="M5 4v12l10-6L5 4z" />
+  </svg>
+);
+
+export const FullscreenEnterIcon = ({ className = "w-5 h-5" }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+  </svg>
+);
+
+export const FullscreenExitIcon = ({ className = "w-5 h-5" }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 9L4 4m0 0l0 5m0-5l5 0m5 5l5-5m0 0v5m0-5h-5m-5 10v-5m0 0h5m0 0L4 20m11-1h5m0 0v-5m0 5l-5-5" />
+  </svg>
+);
+
+export const BackIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
+  </svg>
+);
+
+export const LikeIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.704a2 2 0 011.94 2.515l-1.203 4.812A2 2 0 0117.5 19H5a1 1 0 01-1-1v-9a1 1 0 011-1h2.5a2 2 0 001.664-.89l.812-1.22A2 2 0 0111.64 5H14a2 2 0 012 2v3z" />
+  </svg>
+);
+
+export const DislikeIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14H5.296a2 2 0 01-1.94-2.515l1.203-4.812A2 2 0 017 5h12.5a1 1 0 011 1v9a1 1 0 01-1 1H17a2 2 0 00-1.664.89l-.812 1.22A2 2 0 0112.36 19H10a2 2 0 01-2-2v-3z" />
+  </svg>
+);
+
+export const NoteIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+  </svg>
+);
+
+export const QAIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+  </svg>
+);
+
+export const ChevronUpIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 15l7-7 7 7" />
+  </svg>
+);
+
+
 

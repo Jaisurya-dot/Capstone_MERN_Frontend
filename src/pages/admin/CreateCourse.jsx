@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import BasicInfoForm from '../../components/CreateCourse/BasicInfoForm';
 import ModuleBuilder from '../../components/CreateCourse/ModuleBuilder';
 import ThumbnailSection from '../../components/CreateCourse/ThumbnailSection';
-import HelpSection from '../../components/CreateCourse/HelpSection';
 import PrimaryButton from '../../components/UI/PrimaryButton';
 import { dummyCourses } from '../../data/courseData';
 import { useCourseState } from '../../hooks/useCourseState';
@@ -124,7 +123,7 @@ const CreateCourse = () => {
                         handleThumbnailChange={handleThumbnailChange} 
                     />
 
-                    <HelpSection />
+        
                 </div>
             </div>
         </div>

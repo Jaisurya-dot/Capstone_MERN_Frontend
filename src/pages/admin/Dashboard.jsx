@@ -3,14 +3,11 @@ import { Link } from 'react-router-dom';
 import { dummyCourses } from '../../data/courseData';
 import CourseCard from '../../components/Dashboard/CourseCard';
 
-/**
- * Main dashboard page for administrators.
- * Provides a high-level overview of active courses and quick access to course creation.
- */
+
 const Dashboard = () => {
     return (
         <div className="space-y-8 animate-in fade-in duration-500">
-            {/* Dashboard Header */}
+          
             <header className="flex items-center justify-between">
                 <div className="space-y-1">
                     <h2 className="text-3xl font-extrabold text-blue-900 tracking-tight">System Overview</h2>

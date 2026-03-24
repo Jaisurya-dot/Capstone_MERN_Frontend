@@ -132,49 +132,6 @@ const CoursePreview = () => {
                         </div>
                     </section>
                 </div>
-
-                {/* Sidebar (Right) */}
-                <div className="space-y-6">
-                    <div className="bg-white p-2 rounded-3xl shadow-xl shadow-blue-100/50 border border-gray-100 sticky top-8">
-                        <div className="aspect-video rounded-2xl bg-slate-900 flex items-center justify-center relative group overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2831&auto=format&fit=crop" alt="preview" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" />
-                            <div className="relative z-10 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-2xl scale-125 group-hover:scale-110 transition-transform duration-300">
-                                <svg className="w-8 h-8 text-white fill-current" viewBox="0 0 20 20"><path d="M5 4v12l10-6L5 4z" /></svg>
-                            </div>
-                            <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm font-bold opacity-80 group-hover:opacity-100 transition-opacity whitespace-nowrap">Preview This Course</p>
-                        </div>
-
-                        <div className="p-6 space-y-6">
-                            <div className="flex items-center gap-4">
-                                <span className="text-4xl font-black text-gray-900">FREE</span>
-                            </div>
-
-                            <Link 
-                                to={`/dashboard/watch/${course.id}/${course.modules[0].lessons[0]?.id || ''}`}
-                                className="w-full"
-                            >
-                                <PrimaryButton className="w-full py-4 text-lg">Enroll in This Course</PrimaryButton>
-                            </Link>
-
-                            <div className="space-y-4 pt-4 border-t border-gray-50">
-                                <p className="text-sm font-bold text-gray-800 uppercase tracking-widest">Includes:</p>
-                                <ul className="space-y-3">
-                                    {[
-                                        { icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z', text: '45.5 hours on-demand video' },
-                                        { icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z', text: 'Full lifetime access' },
-                                        { icon: 'M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z', text: 'Access on mobile and TV' },
-                                        { icon: 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10', text: 'Certificate of completion' }
-                                    ].map((item, i) => (
-                                        <li key={i} className="flex items-center gap-3 text-sm text-gray-600">
-                                            <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.icon} /></svg>
-                                            {item.text}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     );

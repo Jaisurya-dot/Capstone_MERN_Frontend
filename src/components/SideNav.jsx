@@ -12,7 +12,7 @@ const SideNav = () => {
 
     return (
         <div className="w-64 bg-slate-900 text-white p-5">
-            <h2 className="text-2xl font-bold mb-8">Admin</h2>
+            <h2 className="text-2xl font-bold mb-8">Instructor</h2>
 
             <ul className="space-y-3">
                 {navItems.map((item) => (

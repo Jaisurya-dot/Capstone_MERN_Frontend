@@ -8,21 +8,17 @@ import CreateCourse from './pages/admin/CreateCourse';
 import AccessUser from './pages/admin/AccessUser';
 import CoursePreview from './pages/admin/CoursePreview';
 
-// Student Pages
+ 
 import WatchCourse from './pages/student/WatchCourse';
 
-/**
- * Main Application Component.
- * Defines the routing structure using React Router.
- * Wraps admin-related pages in a DashboardLayout for consistent navigation.
- */
+ 
 function App() {
     return (
         <Routes>
             {/* Root Redirect: Automatically send users to the dashboard */}
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
 
-            {/* Dashboard Routes with Shared Layout */}
+           
             <Route path="/dashboard" element={<DashboardLayout />}>
                 <Route index element={<Dashboard />} />
                 <Route path="statistics" element={<Statistics />} />
@@ -33,7 +29,6 @@ function App() {
                 <Route path="access-user" element={<AccessUser />} />
             </Route>
 
-            {/* Fallback for 404 - Not Found (Optional) */}
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
     );
