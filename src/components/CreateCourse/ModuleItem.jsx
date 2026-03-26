@@ -2,18 +2,7 @@ import React from 'react';
 import LessonItem from './LessonItem';
 import { TrashIcon, PlusIcon } from '../UI/Icons';
 
-/**
- * Component representing a single module in the course syllabus.
- * Contains LessonItems and allows adding/removing lessons.
- *
- * @param {Object}   module - The module data object.
- * @param {number}   moduleIndex - The index of this module in the list.
- * @param {Function} handleModuleTitleChange - Updates the module title.
- * @param {Function} removeModule - Removes this module.
- * @param {Function} addLesson - Adds a lesson to this module.
- * @param {Function} removeLesson - Removes a lesson from this module.
- * @param {Function} handleLessonChange - Updates lesson details.
- */
+ 
 const ModuleItem = ({ 
     module, 
     moduleIndex, 

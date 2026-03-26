@@ -1,12 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-/**
- * A reusable card component to display course information.
- * Used in the Dashboard and other listing pages.
- *
- * @param {Object} course - The course data object.
- */
+ 
 const CourseCard = ({ course }) => {
     return (
         <div 

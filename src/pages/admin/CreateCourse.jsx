@@ -54,9 +54,7 @@ const CreateCourse = () => {
         }
     }, [courseId, setCourseDetails, setModules]);
 
-    /**
-     * Handles general form field changes (title, description, etc.)
-     */
+   
     const handleCourseChange = (e) => {
         const { name, value } = e.target;
         updateCourseDetails(name, value);
@@ -122,9 +120,10 @@ const CreateCourse = () => {
                         thumbnail={courseDetails.thumbnail} 
                         handleThumbnailChange={handleThumbnailChange} 
                     />
-
-        
                 </div>
+
+
+
             </div>
         </div>
     );

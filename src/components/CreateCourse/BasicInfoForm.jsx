@@ -2,13 +2,7 @@ import React from 'react';
 import InputField from '../UI/InputField';
 import { InfoIcon } from '../UI/Icons';
 
-/**
- * Form section for gathering basic course details.
- * Contains fields for title, description, category, and level.
- *
- * @param {Object}   courseDetails - Current course state.
- * @param {Function} handleCourseChange - Updates general course fields.
- */
+ 
 const BasicInfoForm = ({ courseDetails, handleCourseChange }) => {
     return (
         <section className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 animate-in fade-in duration-500">

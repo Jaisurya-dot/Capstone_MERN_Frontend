@@ -1,13 +1,7 @@
 import React from 'react';
 import { UploadIcon } from '../UI/Icons';
 
-/**
- * Component for uploading a course thumbnail.
- * Displays a preview area (placeholder) and allows file selection.
- *
- * @param {File|string} thumbnail - Current thumbnail file or URL.
- * @param {Function}    handleThumbnailChange - Handler for file input changes.
- */
+ 
 const ThumbnailSection = ({ thumbnail, handleThumbnailChange }) => {
     return (
         <section className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 animate-in fade-in duration-500 delay-100">

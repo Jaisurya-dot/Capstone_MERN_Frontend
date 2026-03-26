@@ -11,11 +11,7 @@ import NotesSection from '../../components/WatchCourse/NotesSection';
 import QASection from '../../components/WatchCourse/QASection';
 import CoursePlaylist from '../../components/WatchCourse/CoursePlaylist';
 
-/**
- * Page component for the course watching experience.
- * Manages video layout, fullscreen logic, and lesson navigation.
- * Uses useWatchState for engagement (likes, doubts, notes).
- */
+ 
 const WatchCourse = () => {
     const { courseId, lessonId } = useParams();
     const videoContainerRef = useRef(null);

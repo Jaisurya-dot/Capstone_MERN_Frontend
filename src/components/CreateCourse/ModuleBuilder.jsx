@@ -2,18 +2,7 @@ import React from 'react';
 import ModuleItem from './ModuleItem';
 import { SyllabusIcon, PlusIcon } from '../UI/Icons';
 
-/**
- * Component that renders the course syllabus builder.
- * Allows users to add, remove, and manage modules within a course.
- *
- * @param {Array}  modules - List of modules currently in the course.
- * @param {Function} addModule - Handler to add a new module.
- * @param {Function} removeModule - Handler to remove a specific module.
- * @param {Function} handleModuleTitleChange - Handler to update a module's title.
- * @param {Function} addLesson - Handler to add a lesson to a module.
- * @param {Function} removeLesson - Handler to remove a lesson from a module.
- * @param {Function} handleLessonChange - Handler to update lesson details.
- */
+ 
 const ModuleBuilder = ({ 
     modules, 
     addModule, 

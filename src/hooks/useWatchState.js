@@ -1,11 +1,6 @@
 import { useState, useCallback } from 'react';
 
-/**
- * Custom hook to manage states for the course watcher.
- * Handles engagement (likes/dislikes), doubts (Q&A), and study notes.
- * 
- * @returns {Object} - Engagement state and interaction handlers.
- */
+ 
 export const useWatchState = () => {
     // Engagement State
     const [likes, setLikes] = useState(124);

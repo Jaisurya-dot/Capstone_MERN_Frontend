@@ -1,16 +1,7 @@
 import React, { useRef } from 'react';
 import { CheckCircleIcon, CloudUploadIcon, TrashIcon } from '../UI/Icons';
 
-/**
- * Component representing a single lesson or file entry within a module.
- * Handles simulated file uploads and metadata updates.
- *
- * @param {Object}   lesson - The individual lesson data.
- * @param {number}   lessonIndex - The index of this lesson in the module's list.
- * @param {string}   moduleId - The ID of the parent module.
- * @param {Function} handleLessonChange - Updates lesson properties.
- * @param {Function} removeLesson - Removes this lesson from the module.
- */
+ 
 const LessonItem = ({ 
     lesson, 
     lessonIndex, 
@@ -20,10 +11,7 @@ const LessonItem = ({
 }) => {
     const fileInputRef = useRef(null);
 
-    /**
-     * Handles file selection for the lesson.
-     * Simulates an upload process with progress.
-     */
+ 
     const onFileChange = (e) => {
         const file = e.target.files[0];
         if (file) {
